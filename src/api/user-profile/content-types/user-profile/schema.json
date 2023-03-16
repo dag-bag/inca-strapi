@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_profiles",
+  "info": {
+    "singularName": "user-profile",
+    "pluralName": "user-profiles",
+    "displayName": "user_profile",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fisrtname": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "nickname": {
+      "type": "string"
+    },
+    "about": {
+      "type": "text"
+    },
+    "education": {
+      "displayName": "education",
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.education"
+    }
+  }
+}

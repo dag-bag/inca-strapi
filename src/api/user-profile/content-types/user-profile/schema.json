@@ -29,6 +29,17 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.education"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "user_profile"
+    },
+    "work": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.work"
     }
   }
 }
